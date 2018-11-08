@@ -1,0 +1,20 @@
+ public static int LargeStraight(int die1, int die2, int die3, int die4, int die5){
+        int[] dice2 = {die1, die2, die3, die4, die5};
+        java.util.Arrays.sort(dice2);
+        int count = 0;
+        int largeStraight = 0;
+        for (int i = 0; i < dice2.length-1; i++) {
+            if ((dice2[i + 1] - dice2[i]) == 1) {
+                count++;
+            }
+        }
+        if (count == 5) {
+            for (int j = 0; j < dice2.length; j++) {
+                largeStraight += dice2[j];
+            }
+        }
+        else {
+            largeStraight = 0;
+        }
+        return largeStraight;
+    }
