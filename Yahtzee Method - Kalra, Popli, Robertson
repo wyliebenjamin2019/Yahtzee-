@@ -1,4 +1,4 @@
- public static int yahtzee(int die1, int die2, int die3, int die4, int die5) {
+public static int yahtzee(int die1, int die2, int die3, int die4, int die5) {
         int[] dice2 = {die1, die2, die3, die4, die5};
         java.util.Arrays.sort(dice2);
         int count = 0;
@@ -9,11 +9,7 @@
             }
         }
         if (count == 5) {
-            for (int j = 0; j < dice2.length; j++) {
-                yahtzee += dice2[j];
-            }
-        } else {
-            yahtzee = 0;
+            yahtzee = 50;
         }
         return yahtzee;
     }
