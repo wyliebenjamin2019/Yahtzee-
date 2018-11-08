@@ -7,13 +7,13 @@
             if (dice2[0] == dice2[i]) {
                 count++;
             }
-            if (count == 5) {
-                for (int j = 0; j < dice2.length; j++){
-                    yahtzee += dice2[j];
-                }
-            } else {
-                yahtzee = 0;
+        }
+        if (count == 5) {
+            for (int j = 0; j < dice2.length; j++) {
+                yahtzee += dice2[j];
             }
+        } else {
+            yahtzee = 0;
         }
         return yahtzee;
     }
