@@ -1,0 +1,16 @@
+public static int sixes(int a, int b, int c, int d, int e){
+        int numSix = 0;
+        if(a == 6){
+            numSix = numSix + 1;
+        }if(b== 6){
+            numSix= numSix + 1;
+        }if(c== 6){
+            numSix = numSix +1;
+        }if(d== 6){
+            numSix = numSix +1;
+        }if(e== 6) {
+            numSix = numSix + 1;
+        }
+        int totalSix = numSix*6;
+        return totalSix;
+    }}
