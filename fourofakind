@@ -1,0 +1,12 @@
+public static int fourOfAKind(int a, int b, int c, int d, int e) {
+        int fourOfAKindTotal;
+        if (a == b && a == c && a == d) {
+            fourOfAKindTotal = a + b + c + d + e;
+        }
+        if (a == b && a == c && a == e) {
+            fourOfAKindTotal = a + b + c + d + e;
+        }
+        else {
+            fourOfAKindTotal = 0;
+        }
+        return fourOfAKindTotal;
