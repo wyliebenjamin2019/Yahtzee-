@@ -1,15 +1,7 @@
 public static int yahtzee(int die1, int die2, int die3, int die4, int die5) {
-        int[] dice2 = {die1, die2, die3, die4, die5};
-        java.util.Arrays.sort(dice2);
-        int count = 0;
         int yahtzee = 0;
-        for (int i = 0; i < dice2.length; i++) {
-            if (dice2[0] == dice2[i]) {
-                count++;
-            }
-        }
-        if (count == 5) {
-            yahtzee = 50;
+        if (die1 == die2 == die3 == die4 == die5) {
+        int yahtzee = 50;
         }
         return yahtzee;
     }
